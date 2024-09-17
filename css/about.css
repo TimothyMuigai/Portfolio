@@ -1,0 +1,99 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "main main"
+    "heading heading"
+    "section-1 section-2"
+    "footer footer";
+    margin: 30px;
+    background-color: beige;
+    border: 1px solid rgb(11, 28, 43);
+}
+.intro{
+    
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-areas: "image about";
+}
+.about{
+    text-align: center;
+    align-self:center;
+    justify-self: start;
+    grid-area: about;
+    
+}
+.image{
+    grid-area: image;
+    justify-self: end;
+    margin-right: 30px;
+}
+img{
+    
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.heading{
+    border-top: 1px solid;
+    grid-area: heading;   
+}
+.heading h3{
+    text-align: center;
+    text-decoration: underline;
+}
+.hobbies{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    grid-area: section-1;
+}
+.hobbies h4, .skills h4{
+    text-align: center;
+}
+.skills{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    grid-area: section-2;
+}
+header{
+    
+    grid-area: footer;
+}
+nav{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+}
+li a:hover{
+    text-decoration: none;
+}
+
+@media(max-width:640px) {
+    .intro{
+    
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image about";
+    }
+    .image{
+        grid-area: image;
+        justify-self: start;
+        margin-left: 10px;
+    }
+    img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+
+    }
+    
+}

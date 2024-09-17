@@ -1,0 +1,60 @@
+.navigation{
+    display: flex;     
+    margin: 10px;
+    justify-content: flex-end;    
+    border-bottom: 1px solid;  
+    
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    gap: 10px; 
+       
+}
+
+li {
+    margin: 5px;
+    list-style-type: none;
+   
+    
+}
+li a{
+    text-decoration: none;
+    color: rgb(5, 69, 69);
+}
+
+.container{
+    border: 1px groove rgb(6, 42, 57);  
+    border-radius: 12px;  
+    width: 50%;
+    height: 350px;
+    display: flexbox;
+    margin-left: 300px; 
+    background-color: aliceblue; 
+    margin-top: 100px; 
+}
+
+p{
+    margin: 30px;
+    text-align: justify;
+    display: flex;    
+    width: 300px;
+    margin-left: 100px;
+    flex-wrap: wrap;
+}
+h1{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.location{
+   
+    width: fit-content;    
+}
+p span{
+    text-decoration: underline;
+    color: rgb(85, 26, 139);
+}
